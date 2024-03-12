@@ -124,10 +124,12 @@ public class PrimaryController {
         PlayerCircle.setFill(new ImagePattern(getImage("Normal.png")));
         
         Finger.setImage(getImage("finger.png"));
-        Finger.setScaleX(0.25);
-        Finger.setScaleY(0.25);
-        Finger.setScaleZ(0.25);
-        Finger.setTranslateY(PlayerCircle.getTranslateY() - App.player_radius * 1.666);
+        //Finger.setScaleX(0.25);
+        //Finger.setScaleY(0.25);
+        //Finger.setScaleZ(0.25);
+        Finger.setFitWidth(57);
+        Finger.setTranslateY(PlayerCircle.getTranslateY()-8);
+        Finger.setTranslateX(App.player_radius*3);
         
         Target1Circle.setRadius(App.target_radius);
         Target1Circle.setFill(new ImagePattern(getImage("EasyDemon.png")));
